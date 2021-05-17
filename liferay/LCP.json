@@ -1,10 +1,10 @@
 {
   "kind": "Deployment",
   "id": "liferay",
-  "image": "liferaycloud/liferay-dxp:7.3-4.0.7",
+  "image": "liferaycloud/liferay-dxp:7.2-4.0.8",
   "memory": 8192,
   "cpu": 8,
-  "scale": 1,
+  "scale": 2,
   "ports": [
     {
       "port": 8080,
