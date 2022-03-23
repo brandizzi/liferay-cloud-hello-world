@@ -1,7 +1,7 @@
 {
   "kind": "Deployment",
   "id": "backup",
-  "image": "liferaycloud/backup:LCD-10466_hiro_v1",
+  "image": "liferaycloud/backup:5.0.0-alpha.1",
   "memory": 1024,
   "cpu": 2,
   "scale": 1,
@@ -32,7 +32,9 @@
     "LCP_BACKUP_CREATE_SCHEDULE": "",
     "LCP_BACKUP_FOLDER": "/opt/liferay/data",
     "LCP_BACKUP_RESTORE_SCHEDULE": "",
-    "LCP_DATABASE_SERVICE": "database"
+    "LCP_DATABASE_SERVICE": "database",
+    "LCP_GCP_DATABASE_CHARSET": "utf8mb4",
+    "LCP_GCP_DATABASE_COLLATION": "utf8mb4_unicode_ci"
   },
   "volumes": {
     "data": "/opt/liferay/data"

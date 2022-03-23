@@ -1,7 +1,7 @@
 {
   "kind": "Deployment",
   "id": "database",
-  "image": "liferaycloud/database:4.0.6",
+  "image": "liferaycloud/database:5.0.0-alpha.1",
   "memory": 1024,
   "cpu": 2,
   "scale": 1,
@@ -34,6 +34,10 @@
     "periodSeconds": 60,
     "timeoutSeconds": 60,
     "failureThreshold": 3
+  },
+  "env": {
+    "LCP_GCP_DATABASE_CHARSET": "utf8mb4",
+    "LCP_GCP_DATABASE_COLLATION": "utf8mb4_unicode_ci"
   },
   "environments": {
     "infra": {
