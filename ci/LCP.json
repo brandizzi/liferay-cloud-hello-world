@@ -1,7 +1,7 @@
 {
   "kind": "StatefulSet",
   "id": "ci",
-  "image": "liferaycloud/jenkins:2.235.5-4.0.7",
+  "image": "liferaycloud/jenkins:2.319.3-jdk8-5.0.0-alpha.1",
   "deploy": false,
   "memory": 8192,
   "cpu": 4,
@@ -31,10 +31,10 @@
     "failureThreshold": 12
   },
   "env": {
-    "JENKINS_ADMIN_USER_NAME": "test",
-    "JENKINS_EMAIL_NOTIFICATIONS_FROM": "Jenkins CI - test <test@liferay.com>",
-    "JENKINS_URL": "https://ci-test-infra.hiro.lfr.sh",
-    "LCP_CI_SCM_REPOSITORY_NAME": "test",
+    "JENKINS_ADMIN_USER_NAME": "lce3526v3",
+    "JENKINS_EMAIL_NOTIFICATIONS_FROM": "Jenkins CI - lce3526v3 <lce3526v3@liferay.com>",
+    "JENKINS_URL": "https://ci-lce3526v3-infra.lfr.sh",
+    "LCP_CI_SCM_REPOSITORY_NAME": "lce3526v3",
     "LCP_CI_SCM_REPOSITORY_OWNER": "dxpcloud-dev"
   },
   "environments": {

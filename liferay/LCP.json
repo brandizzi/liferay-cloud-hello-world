@@ -1,10 +1,10 @@
 {
   "kind": "Deployment",
   "id": "liferay",
-  "image": "liferaycloud/liferay-dxp:7.2-4.0.8",
+  "image": "liferaycloud/liferay-dxp:7.4-5.0.0-alpha.1",
   "memory": 8192,
   "cpu": 8,
-  "scale": 2,
+  "scale": 1,
   "ports": [
     {
       "port": 8080,
@@ -37,7 +37,7 @@
   "env": {
     "LCP_PROJECT_LIFERAY_CLUSTER_ENABLED": "true",
     "LIFERAY_JVM_OPTS": "-Xms2048m -Xmx6144m"
-  },
+   },
   "dependencies": [
     "database",
     "search"
